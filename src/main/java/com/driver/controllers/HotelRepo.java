@@ -1,6 +1,10 @@
 package com.driver.controllers;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Objects;
+import java.util.UUID;
+
 import com.driver.model.Hotel;
 import com.driver.model.User;
 import com.driver.model.Booking;
@@ -14,12 +18,15 @@ public class HotelRepo {
     private HashMap<Integer,Integer> countBooking=new HashMap<>();
 
     public String addHotel(Hotel hotel){
-        if(hotel== null || hotel.getHotelName()==null || hotelD.containsKey(hotel.getHotelName())){
-            return "Fail";
-        } //Alpha Trion.
+        if(hotel== null || hotel.getHotelName()==null){
+            return "FAILURE";
+        }
+        if(hotelD.containsKey(hotel.getHotelName())){
+            return "FAILURE";
+        }
 
         hotelD.put(hotel.getHotelName(),hotel);
-        return "Pass";
+        return "SUCCESS";
     }
 
     public Integer addUser(User user){

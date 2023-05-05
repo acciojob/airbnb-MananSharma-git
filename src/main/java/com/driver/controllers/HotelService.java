@@ -4,6 +4,7 @@ import com.driver.model.Hotel;
 import com.driver.model.User;
 import com.driver.model.Booking;
 import com.driver.model.Facility;
+
 import java.util.List;
 public class HotelService {
     HotelRepo repo=new HotelRepo();
