@@ -10,7 +10,6 @@ public class AirBnb {
 
 		SpringApplication.run(AirBnb.class, args);
 
-		System.out.print("");
 	}
 
 }
