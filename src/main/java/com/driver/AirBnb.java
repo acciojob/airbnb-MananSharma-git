@@ -7,7 +7,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class AirBnb {
 
 	public static void main(String[] args) {
+
 		SpringApplication.run(AirBnb.class, args);
+
+		System.out.print("");
 	}
 
 }
